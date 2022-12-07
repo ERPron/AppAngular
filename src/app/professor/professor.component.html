@@ -1,0 +1,20 @@
+<app-titulo [titulo]="titulo"></app-titulo>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sobre Nome</th>
+            <th scope="col">Telefone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prof of professor">
+            <th scope="row">{{prof.id}}</th>
+            <td>{{prof.nome}}</td>
+            <td>{{prof.sobrenome}}</td>
+            <td>{{prof.telefone}}</td>
+        </tr>
+    </tbody>
+</table>
